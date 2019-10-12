@@ -17,6 +17,11 @@ export class InicioPage implements OnInit {
       icon: 'appstore',
       name: 'Alert',
       redirectTo: '/alert'
+    },
+    {
+      icon: 'beaker',
+      name: 'Avatar',
+      redirectTo: '/avatar'
     }
 
   ];
@@ -31,4 +36,5 @@ interface Componente {
   icon: string;
   name: string;
   redirectTo: string;
+
 }
