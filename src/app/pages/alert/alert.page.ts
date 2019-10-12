@@ -8,6 +8,8 @@ import { AlertController } from '@ionic/angular';
 })
 export class AlertPage implements OnInit {
 
+  titulo: string;
+
   constructor(
     public alertCtrl: AlertController
   ) { }
@@ -39,5 +41,37 @@ export class AlertPage implements OnInit {
     });
 
     await alert.present();
+  }
+
+  async presentInput() {
+    // tslint:disable-next-line: no-trailing-whitespace
+    const input = await this.alertCtrl.create({
+      header: 'Input',
+      subHeader: 'Ingrese su nombre',
+      inputs: [
+        {
+          name: 'txtNombre',
+          type: 'text',
+          placeholder: 'Nombre'
+        }],
+
+        buttons: [
+          {
+            text: 'Cancel',
+            role: 'cancel',
+            cssClass: 'secondary',
+            handler: () => {
+              console.log('Confirm Cancel');
+            }
+          }, {
+            text: 'Ok',
+            handler: (data) => {
+              console.log('Confirm Ok', data);
+              this.titulo = data.txtNombre;
+            }
+          }
+        ]
+      });
+    await input.present();
   }
 }
