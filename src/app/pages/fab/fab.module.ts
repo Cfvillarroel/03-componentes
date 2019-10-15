@@ -8,6 +8,7 @@ import { IonicModule } from '@ionic/angular';
 import { FabPage } from './fab.page';
 import { ComponentsModule } from '../../components/components.module';
 
+
 const routes: Routes = [
   {
     path: '',
