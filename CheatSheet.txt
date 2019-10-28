@@ -1,0 +1,8 @@
+Generar nueva página
+ionic g page pages/list --spec=false
+
+Generar services
+ionic g service services/data --spec=false
+
+Para usar ejemplos
+https://jsonplaceholder.typicode.com/
