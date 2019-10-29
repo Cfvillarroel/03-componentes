@@ -4,5 +4,8 @@ ionic g page pages/list --spec=false
 Generar services
 ionic g service services/data --spec=false
 
+Generar Componentes
+ionic g component components/menu --spec=false
+
 Para usar ejemplos
 https://jsonplaceholder.typicode.com/
