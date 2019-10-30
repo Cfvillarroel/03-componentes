@@ -9,3 +9,6 @@ ionic g component components/menu --spec=false
 
 Para usar ejemplos
 https://jsonplaceholder.typicode.com/
+
+Animate 
+https://daneden.github.io/animate.css/
