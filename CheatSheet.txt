@@ -16,3 +16,10 @@ https://daneden.github.io/animate.css/
 Generar Pipes
 ionice g m pipes
 ionic g pipe pipes/filtro --spec=false
+
+Tip:
+Para crear un @ViewChild
+@ViewChild(Type, { static: false }) name: Type;
+eL static depende**
+el name viene del html #name**
+@ViewChild(IonInfiniteScroll, { static: false }) infiniteScroll: IonInfiniteScroll;
