@@ -11,7 +11,7 @@ Para usar ejemplos
 https://jsonplaceholder.typicode.com/
 
 Animate 
-https://daneden.github.io/animate.css/
+https://github.com/daneden/animate.css
 
 Generar Pipes
 ionice g m pipes
